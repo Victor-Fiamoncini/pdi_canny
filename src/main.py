@@ -1,15 +1,9 @@
-from infra.file_readers.opencv_file_reader import OpencvFileReader
-from infra.filter_appliers.opencv_filter_applier import OpencvFilterApplier
-from services.apply_canny_filter_service import ApplyCannyFilterService
+from factories.apply_canny_filter_service_factory import ApplyCannyFilterServiceFactory
 
 if __name__ == "__main__":
-  file_path = 'files/input/file01.jpg'
+  file_path = 'files/inpsdsdut/file01.jpg'
 
   try:
-    file_reader =  OpencvFileReader()
-    filter_applier =  OpencvFilterApplier()
-    apply_canny_filter_service = ApplyCannyFilterService(file_reader, filter_applier)
-
-    apply_canny_filter_service.exec(file_path)
+    ApplyCannyFilterServiceFactory.make().exec(file_path)
   except Exception as ex:
-    print(ex)
+    print(f'Error raised: {ex}')
