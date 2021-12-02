@@ -142,9 +142,9 @@ dmypy.json
 cython_debug/
 
 # Static images
-src/files/input/*
-!src/files/input/.gitkeep
-src/files/output/*
-!src/files/output/.gitkeep
+files/input/*
+!files/input/.gitkeep
+files/output/*
+!files/output/.gitkeep
 
 # End of https://www.toptal.com/developers/gitignore/api/python

@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 
 if __name__ == "__main__":
   cwd = os.getcwd()
-  input_file_full_path = os.path.join(cwd, 'src/files/input/file01.jpg')
+  input_file_full_path = os.path.join(cwd, 'files/input/file01.jpg')
 
   print(input_file_full_path)
 
