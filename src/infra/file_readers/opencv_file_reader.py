@@ -4,7 +4,7 @@ import cv2
 from infra.file_readers.contracts.file_reader import FileReader
 
 class OpencvFileReader(FileReader):
-  def read_file(file_path: str):
+  def read_file(self, file_path: str):
     cwd = os.getcwd()
     file_full_path = os.path.join(cwd, file_path)
 

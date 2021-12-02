@@ -9,7 +9,7 @@ Apresentar autores, funcionamento, código, parâmetros utilizados, aplicações
 
 ```bash
 pipenv install
-python3 ./src/main/app.py
+python3 ./src/main.py
 ```
 
 ----------
