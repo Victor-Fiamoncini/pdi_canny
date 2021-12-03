@@ -4,7 +4,7 @@ from services.apply_canny_filter_service import ApplyCannyFilterService
 
 class ApplyCannyFilterServiceFactory:
   @staticmethod
-  def make():
+  def make() -> ApplyCannyFilterService:
     file_reader = OpencvFileReader()
     filter_applier = OpencvFilterApplier()
 

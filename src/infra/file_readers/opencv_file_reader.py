@@ -1,4 +1,5 @@
 import os
+from typing import Any
 import cv2
 
 from infra.file_readers.contracts.file_reader import FileReader
