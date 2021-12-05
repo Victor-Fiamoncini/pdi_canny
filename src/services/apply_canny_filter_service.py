@@ -7,9 +7,9 @@ class ApplyCannyFilterService:
     self._file_reader = file_reader
     self._canny_filter_applier = canny_filter_applier
 
-  def exec(self, file_path: str):
+  def exec(self, file_path: str, threshold1: int, threshold2: int):
     try:
       img = self._file_reader.read_file(file_path)
-      self._canny_filter_applier.apply_filter(img, 300, 400)
+      self._canny_filter_applier.apply_filter(img, threshold1, threshold2)
     except:
       raise ApplyCannyFilterError()
